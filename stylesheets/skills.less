@@ -1,0 +1,182 @@
+@import 'vars.less';
+@import 'frameless.less';
+
+.content.bars{
+	text-align: center;
+	padding-bottom: @gutter*@px;
+}
+ul#skills{
+	li{
+		width: @2cols;
+		display: inline-block;
+		margin: (@gutter / 2 )*1px;
+		
+		strong{
+			color: @black;
+		}
+		.skill{
+			height: 5px; 
+			margin: 2px 0; 
+			background: lighten(@grey, 10%); 
+			border-bottom: 1px solid lighten(@grey, 30%);
+			border-right: 1px solid lighten(@grey, 30%);
+			position: absolute;
+			width: @2cols;
+/*			box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4); */
+			.bar{
+				height: 100%;
+				width: 0px;
+				background: @black;
+				&#html5{
+					background: @orange;
+					width: @html_lvl;
+					&.animate{
+						.animation(html5 @bar_time ease-out);
+					}
+				}
+				&#css3{
+					background: @pink;
+					width: @css_lvl;
+					&.animate{
+						.animation(css @bar_time ease-out);
+					}
+				}
+				&#php{
+					background: @blue;
+					width: @php_lvl;
+					&.animate{
+						.animation(php @bar_time ease-out);
+					}
+				}
+				&#mysql{
+					background: @green;
+					width: @mysql_lvl;
+					&.animate{
+						.animation(mysql @bar_time ease-out);
+					}
+				}
+				&#javascript{
+					width: @js_lvl;
+					&.animate{
+						.animation(js @bar_time ease-out);
+					}
+				}
+				&#node{
+					background: @blue;
+					width: @node_lvl;
+					&.animate{
+						.animation(node @bar_time ease-out);
+					}
+				}
+				&#jquery{
+					width: @jquery_lvl;
+					&.animate{
+						.animation(jquery @bar_time ease-out);
+					}
+				}
+				&#python{
+					background: @orange;
+					width: @python_lvl;
+					&.animate{
+						.animation(python @bar_time ease-out);
+					}
+				}
+				&#RoR{
+					background: @green;
+					width: @RoR_lvl;
+					&.animate{
+						.animation(RoR @bar_time ease-out);
+					}
+				}
+				&#matlab{
+					background: @pink;
+					width: @matlab_lvl;
+					&.animate{
+						.animation(matlab @bar_time ease-out);
+					}
+				}
+				&#c{
+					background: @orange;
+					width: @c_lvl;
+					&.animate{
+						.animation(c @bar_time ease-out);
+					}
+				}
+				&#cpp{
+					background: @pink;
+					width: @cpp_lvl;
+					&.animate{
+						.animation(cpp @bar_time ease-out);
+					}
+				}
+				&#labview{
+					background: @blue;
+					width: @labview_lvl;
+					&.animate{
+						.animation(labview @bar_time ease-out);
+					}
+				}
+				&#java{
+					background: @green;
+					width: @java_lvl;
+					&.animate{
+						.animation(java @bar_time ease-out);
+					}
+				}
+				&#opencv{
+					width: @opencv_lvl;
+					&.animate{
+						.animation(opencv @bar_time ease-out);
+					}
+				}
+				&#vb{
+					background: @orange;
+					width: @vb_lvl;
+					&.animate{
+						.animation(vb @bar_time ease-out);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.animation(@anim){
+	-webkit-animation: @anim;
+	-moz-animation: @anim;
+	-o-animation: @anim;
+}
+
+@-webkit-keyframes html5 {0%  	{ width:0px;} 100%	{ width: @html_lvl;}}
+@-moz-keyframes html5	{0%  	{ width:0px;} 100%	{ width: @html_lvl;}}
+@-webkit-keyframes css {0%  	{ width:0px;} 100%	{ width: @css_lvl;}}
+@-moz-keyframes css	{0%  	{ width:0px;} 100%	{ width: @css_lvl;}}
+@-webkit-keyframes php {0%  	{ width:0px;} 100%	{ width: @php_lvl;}}
+@-moz-keyframes php	{0%  	{ width:0px;} 100%	{ width: @php_lvl;}}
+@-webkit-keyframes mysql {0%  	{ width:0px;} 100%	{ width: @mysql_lvl;}}
+@-moz-keyframes mysql	{0%  	{ width:0px;} 100%	{ width: @mysql_lvl;}}
+@-webkit-keyframes js {0%  	{ width:0px;} 100%	{ width: @js_lvl;}}
+@-moz-keyframes js	{0%  	{ width:0px;} 100%	{ width: @js_lvl;}}
+@-webkit-keyframes node {0%  	{ width:0px;} 100%	{ width: @node_lvl;}}
+@-moz-keyframes node	{0%  	{ width:0px;} 100%	{ width: @node_lvl;}}
+@-webkit-keyframes jquery {0%  	{ width:0px;} 100%	{ width: @jquery_lvl;}}
+@-moz-keyframes jquery	{0%  	{ width:0px;} 100%	{ width: @jquery_lvl;}}
+@-webkit-keyframes python {0%  	{ width:0px;} 100%	{ width: @python_lvl;}}
+@-moz-keyframes python	{0%  	{ width:0px;} 100%	{ width: @python_lvl;}}
+@-webkit-keyframes RoR {0%  	{ width:0px;} 100%	{ width: @RoR_lvl;}}
+@-moz-keyframes RoR	{0%  	{ width:0px;} 100%	{ width: @RoR_lvl;}}
+@-webkit-keyframes matlab {0%  	{ width:0px;} 100%	{ width: @matlab_lvl;}}
+@-moz-keyframes matlab	{0%  	{ width:0px;} 100%	{ width: @matlab_lvl;}}
+@-webkit-keyframes c {0%  	{ width:0px;} 100%	{ width: @c_lvl;}}
+@-moz-keyframes c	{0%  	{ width:0px;} 100%	{ width: @c_lvl;}}
+@-webkit-keyframes cpp {0%  	{ width:0px;} 100%	{ width: @cpp_lvl;}}
+@-moz-keyframes cpp	{0%  	{ width:0px;} 100%	{ width: @cpp_lvl;}}
+@-webkit-keyframes labview {0%  	{ width:0px;} 100%	{ width: @labview_lvl;}}
+@-moz-keyframes labview	{0%  	{ width:0px;} 100%	{ width: @labview_lvl;}}
+@-webkit-keyframes java {0%  	{ width:0px;} 100%	{ width: @java_lvl;}}
+@-moz-keyframes java	{0%  	{ width:0px;} 100%	{ width: @java_lvl;}}
+@-webkit-keyframes opencv {0%  	{ width:0px;} 100%	{ width: @opencv_lvl;}}
+@-moz-keyframes opencv	{0%  	{ width:0px;} 100%	{ width: @opencv_lvl;}}
+@-webkit-keyframes vb {0%  	{ width:0px;} 100%	{ width: @vb_lvl;}}
+@-moz-keyframes vb	{0%  	{ width:0px;} 100%	{ width: @vb_lvl;}}
