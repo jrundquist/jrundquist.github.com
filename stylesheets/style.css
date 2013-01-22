@@ -864,7 +864,7 @@ article section figure figcaption {
   padding-top: 6px;
 }
 .project {
-  width: 264px;
+  width: 262px;
   margin-right: 24px;
   display: inline-block;
   vertical-align: top;
@@ -1164,7 +1164,7 @@ footer a:first-child {
     width: 120px;
   }
   .project {
-    width: 228px;
+    width: 100%;
     margin-right: 24px;
   }
   .project img {
