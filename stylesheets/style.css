@@ -228,7 +228,7 @@ ul#skills li .skill .bar#javascript.animate {
 }
 ul#skills li .skill .bar#node {
   background: #0092d0;
-  width: 60%;
+  width: 90%;
 }
 ul#skills li .skill .bar#node.animate {
   -webkit-animation: node 1500ms ease-out;
@@ -408,7 +408,7 @@ ul#skills li .skill .bar#vb.animate {
     width: 0px;
   }
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 @-moz-keyframes node {
@@ -416,7 +416,7 @@ ul#skills li .skill .bar#vb.animate {
     width: 0px;
   }
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 @-webkit-keyframes jquery {
