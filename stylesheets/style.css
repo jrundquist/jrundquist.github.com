@@ -228,7 +228,7 @@ ul#skills li .skill .bar#javascript.animate {
 }
 ul#skills li .skill .bar#node {
   background: #0092d0;
-  width: 60%;
+  width: 90%;
 }
 ul#skills li .skill .bar#node.animate {
   -webkit-animation: node 1500ms ease-out;
@@ -408,7 +408,7 @@ ul#skills li .skill .bar#vb.animate {
     width: 0px;
   }
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 @-moz-keyframes node {
@@ -416,7 +416,7 @@ ul#skills li .skill .bar#vb.animate {
     width: 0px;
   }
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 @-webkit-keyframes jquery {
@@ -864,7 +864,7 @@ article section figure figcaption {
   padding-top: 6px;
 }
 .project {
-  width: 264px;
+  width: 262px;
   margin-right: 24px;
   display: inline-block;
   vertical-align: top;
@@ -1164,7 +1164,7 @@ footer a:first-child {
     width: 120px;
   }
   .project {
-    width: 228px;
+    width: 100%;
     margin-right: 24px;
   }
   .project img {
@@ -1229,7 +1229,7 @@ footer a:first-child {
     width: 120px;
   }
   .project {
-    width: 264px;
+    width: 262px;
     margin-right: 24px;
   }
   .project img {
