@@ -1,0 +1,73 @@
+/* Colors*/
+@orange: #E37822;
+@blue: #0092D0;
+@green: #147B33;
+@pink: #CC0069;
+@black: #272827;
+@white: #FFF;
+@whiteSmoke: #F5F5F5;
+@grey: #AEACC1;
+@font: #4f4f5f;
+@highlight: @blue;
+
+/* Skill Bars */
+
+@html_lvl: 95%;
+@css_lvl: 95%;
+@php_lvl: 95%;
+@mysql_lvl: 90%;
+@js_lvl: 90%;
+@node_lvl: 60%;
+@jquery_lvl: 70%;
+@python_lvl: 75%;
+@RoR_lvl: 30%;
+@matlab_lvl: 50%;
+@c_lvl: 50%;
+@cpp_lvl: 50%;
+@labview_lvl: 20%;
+@java_lvl: 80%;
+@opencv_lvl: 70%;
+@vb_lvl: 10%;
+
+@bar_time: 1500ms;
+
+/* Fonts */
+@import  url('https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400|Open+Sans+Condensed:300&.css');
+
+
+/* Mixins */
+.border-radius(@size){
+	-webkit-border-radius: @size;
+	-moz-border-radius: @size;
+	border-radius: @size;
+}
+.box-shadow(@shadow){
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+.box-shadow2(@shadow, @shadow2){
+	-webkit-box-shadow: @shadow, @shadow2;
+	-moz-box-shadow: @shadow, @shadow2;
+	-o-box-shadow: @shadow, @shadow2;
+	box-shadow: @shadow, @shadow2;
+}
+.transition(@trans){
+	-webkit-transition: @trans;
+	-moz-transition: @trans;
+	-ms-transition: @trans;
+	-o-transition: @trans;
+	transition: @trans;
+}
+.gradient(@white, @whiteSmoke, @size){
+	background-color: @whiteSmoke;
+	background-repeat: no-repeat;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@white), color-stop(@size, @white), to(@whiteSmoke));
+	background-image: -webkit-linear-gradient(@white, @white @size, @whiteSmoke);
+	background-image: -moz-linear-gradient(top, @white, @white @size, @whiteSmoke);
+	background-image: -ms-linear-gradient(@white, @white @size, @whiteSmoke);
+	background-image: -o-linear-gradient(@white, @white @size, @whiteSmoke);
+	background-image: linear-gradient(@white, @white @size, @whiteSmoke);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr=@whiteSmoke, GradientType=0);
+}

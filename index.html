@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+
+ Hey there
+
+ I've taken most content out of this page. It's been nearly 10 years since I've put together
+ a collection of my projects, and many of them are now proprietary - relating to my time at
+ Nest (where I was the lead of the home.nest.com webapp), and Every Day Robots 
+ (everydayrobots.com) where I lead the internal tools team.
+
+ I have a passion for experimental tech, pushing things to their limits, graphics, networking,
+ and gaming. If you're interested in learning more, hit me up at this email: 
+ anJzY2llbmNlZ3V5QGdtYWlsLmNvbQ==
+
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>James Rundquist</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+<body class="loading">
+  <article id="top">
+    <header id="introduction">
+      <div id="sig-container"></div>
+      <div id="text"></div>
+      <h1>
+        James Rundquist
+      </h1>
+      <h2>
+        <strong>S</strong>oftware Engineer &amp; Creator
+      </h2>
+    </header>
+  </atricle>
+
+  <!--[if IE<9]><script src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script><![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/modernizr-2.min.js" type="text/javascript">
+  </script><script src="/javascripts/canvasStuff.js" type="text/javascript">
+  </script><script src="/javascripts/jquery.html5form-1.5.js" type="text/javascript">
+  </script><script type="text/javascript">
+  $('html, body').animate({scrollTop:'0px'}, 1, 'swing');
+  $('.scroll').bind('click',function(event){
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+    scrollTop: ($($anchor.attr('href')).offset().top - ($('#header').height()*1.5))
+    }, 500, 'swing');
+    event.preventDefault();
+  });
+  </script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27122535-1']);
+  _gaq.push(['_setDomainName', 'jamesrundquist.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
+</html>
